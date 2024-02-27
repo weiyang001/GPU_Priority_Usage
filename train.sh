@@ -13,7 +13,7 @@ do
         if [ $i -lt $size ]
         then
             echo 'GPU'$count' is avaiable'
-            CUDA_VISIBLE_DEVICES=$count python train.py
+            CUDA_VISIBLE_DEVICES=$count python train.py #将这一句更换为需要运行的程序
             var=1
             break
         fi
